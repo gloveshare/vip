@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="css/amazeui.flat.min.css">
+<link rel="stylesheet" type="text/css" href="css/public.css">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+<link rel="apple-touch-icon" href="favicon.ico">
+<meta http-equiv="Cache-Control" content="no-siteapp">
+<title>全网VIP视频在线解析</title>
+<meta name="keywords" content="优酷VIP解析,爱奇艺VIP解析,腾讯VIP解析,乐视VIP解析,芒果VIP解析,视频解析,全能VIP视频解析,视频在线解析">
+<meta name="description" content="本站为广大网友提供优酷VIP解析，爱奇艺VIP解析，腾讯VIP解析，乐视VIP解析，芒果VIP解析等解析服务，让你省去购买视频VIP费用，欢迎大家收藏本站，并将它介绍给您的朋友！">
+<link rel="stylesheet" type="text/css" href="css/video.css">
+<script src="cards.js"></script>
+    <style>
+        /* 弹窗样式 */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0,0.4);
+        }
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 80%;
+        }
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        /* 隐藏页面内容 */
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+</head>
+<body>
+
+<!-- 页面内容，初始设为隐藏 -->
+<div id="pageContent" class="hidden">
+<header class="am-topbar am-topbar-inverse">
+<div class="am-container">
+<p class="am-topbar-brand"><a href="https://gloveshare.github.io/vip/" class="am-topbar-logo"><img src="img/logo.png" height="36px" /></a></p>
+<a class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-collapse="{target: '#doc-topbar-collapse'}"><span class="am-sr-only">导航切换</span> <span class="am-icon-bars"></span></a>
+<div class="am-collapse am-topbar-collapse" id="doc-topbar-collapse">
+<ul class="am-nav am-nav-pills am-topbar-nav">
+<li><a href="/">短视频解析</a></li>
+</ul>
+<div class="am-topbar-right">
+</div>
+</div>
+</div>
+</header>  <div class="am-container">
+    <div class="logo">全网视频解析</div>
+    <div class="am-u-lg-6 search">
+      <form method="post" id="str-post" class="am-input-group am-input-group-primary">
+        <input type="text" name="videourl" placeholder="请输入播放地址后解析，支持爱奇艺，优酷，土豆等VIP视频播放地址" autocomplete="off" class="am-form-field s-input">
+    <span class="am-input-group-btn">
+    <select data-am-selected="{btnWidth:80,maxHeight:220}">
+      <option value="https://vip.parwix.com:4433/player/?url=" selected>一号</option>
+      <option value="https://www.2ajx.com/vip.php?url=">二号</option>
+      <option value="https://jx.618g.com/?url=">三号</option>
+      <option value="https://660e.com/?url=">四号</option>
+      <option value="https://www.administratorw.com/admin.php?url=">五号</option>
+      <option value="https://api.baiyug.vip/index.php?url=">六号</option>
+      <option value="https://www.1717yun.com/jx/vip/index.php?url=">七号</option>
+      <option value="https://jx.api.163ren.com/vod.php?url=">八号</option>
+      <option value="https://www.wmxz.wang/video.php?url=">九号</option>
+      <option value="https://j.zz22x.com/jx/?url=">十号</option>
+      <option value="https://vip.bljiex.com/?v=">十一号</option>
+      <option value="https://z1.m1907.cn/?jx=">十二号</option>
+      <option value="https://jx.bozrc.com:4433/player/?url=">十三号</option>
+      <option value="https://jx.aidouer.net/?url=">十四号</option>
+      <option value="https://api.qianqi.net/vip/?url=">十五号</option>
+      <option value="https://www.ckplayer.vip/jiexi/?url=">十六号</option>
+      <option value="https://www.gai4.com/?url=">十七号</option>
+      <option value="https://www.ckmov.vip/api.php?url=">十八号</option>
+      <option value="https://www.h8jx.com/jiexi.php?url=">十九号</option>
+      <option value="https://jx.playerjy.com/?url=">二十号</option>
+      <option value="https://ckmov.ccyjjd.com/ckmov/?url=">二十一号</option>
+      <option value="https://api.jiexi.la/?url=">二十二号</option>
+      <option value="https://vip.laobandq.com/jiexi.php?url=">二十三号</option>
+      <option value="https://www.mtosz.com/m3u8.php?url=">二十五号</option>
+      <option value="https://jx.m3u8.tv/jiexi/?url=">二十六号</option>
+      <option value="https://www.nxflv.com/?url=">二十七号</option>
+      <option value="https://okjx.cc/?url=">二十八号</option>
+      <option value="https://www.playm3u8.cn/jiexi.php?url=">二十九号</option>
+      <option value="https://www.pangujiexi.cc/jiexi.php?url=">三十号</option>
+      <option value="https://jx.blbo.cc:4433/?url=">三十一号</option>
+      <option value="https://jx.mmkv.cn/tv.php?url=">三十二号</option>
+      <option value="https://jx.rdhk.net/?v=">三十三号</option>
+      <option value="https://jx.blbo.cc:4433/?url=">三十四号</option>
+      <option value="https://jx.ap2p.cn/?url=">三十五号</option>
+      <option value="https://jsap.attakids.com/?url=">三十六号</option>
+      <option value="https://jx.dj6u.com/?url=">三十七号</option>
+      <option value="https://jx.ivito.cn/?url=">三十八号</option>
+      <option value="https://jx.xmflv.com/?url=">三十九号</option>
+      <option value="https://sb.5gseo.net/?url=">四十号</option>
+      <option value="https://jx.yparse.com/index.php?url=">四十一号</option>
+      <option value="https://go.yh0523.cn/y.cy?url=">四十二二号</option>
+      <option value="https://jx.000180.top/jx/?url=">四十三号</option>
+      <option value="https://jx.4kdv.com/?url=">四十四号</option>
+      <option value="https://www.8090g.cn/?url=">四十五号</option>
+    </select>
+          <button class="am-btn am-btn-primary" type="submit"><span class="am-icon-play"></span></button>
+        </span>
+    </form>
+    </div>
+    <iframe allowfullscreen="true" allowtransparency="true" id="player" frameborder="0" src="player.html"></iframe>
+    <div class="am-text-right">
+   
+    </div>
+    <div class="am-alert am-alert-secondary">
+      <p>使用方法：将播放视频的链接复制并粘贴到输入框，点击右边的 ▶ 键播放即可，如果无法播放请切换线路。<a href="https://mp.weixin.qq.com/s/Uie046yjcyXfYD_1n4h-Mw" target="_blank">图文教程</a></p>
+      <p>本站支持解析百度网盘，优酷，爱奇艺，腾讯，芒果，搜狐，乐视，快手，土豆，PPTV，华数TV，ACFUN，哔哩哔哩，QQ空间视频，韩国棒子云，搜狐云，M3U8，1905电影，拉面网，音悦台，美拍，秒拍，酷6，56视频，CCTV央视网，糖豆网，6间房，网易公开课，虎牙，凤凰，龙珠，YY神曲，17173等网站视频</p>
+    </div>
+    <div class="am-popup" id="player">
+      <div class="am-popup-inner">
+        <div class="am-popup-hd">
+          <h4 class="am-popup-title">视频播放器</h4>
+          <span data-am-modal-close class="am-close">&times;</span>
+        </div>
+        <div class="am-popup-bd"></div>
+      </div>
+    </div>
+  </div>
+<footer>
+	<div class="am-container">
+		<p><span class="intro-siteinfo">。加载中...</span>
+		<br><br><br>
+	<center><b>免责声明</b><br>本站点仅供学习与交流，本站不储存任何影视文件，资源均来源于网络。如有侵权，请联系本人予以删除！</center>
+	<!--版权-->
+<div class="copyright"><br /><br /><h2><center>© <a href="https://mp.weixin.qq.com/s/6oyzr-4MS2eayz7qseSbww">glove科技</a></center></h2></div>
+	</div>
+</footer>
+<script src="https://cdn.ssss.fun/jquery/3.5.1/jquery.min.js"></script>
+<script src="js/amazeui.min.js"></script>
+<script src="js/public.js"></script><script src="js/video.js"></script>
+</div>
+
+<!-- 弹窗模态框 -->
+<div id="myModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <p>请输入你的卡密：</p>
+        <input type="text" id="cardInput" />
+        <button onclick="validateCard()">验证</button>
+    </div>
+</div>
+
+<script>
+    // 显示页面内容
+    function showPageContent() {
+        var pageContent = document.getElementById("pageContent");
+        pageContent.classList.remove("hidden");
+    }
+
+    // 验证卡密
+    function validateCard() {
+        var cardInput = document.getElementById("cardInput").value;
+        var isValid = cardSecrets.includes(cardInput);
+        if (isValid) {
+            alert("验证成功！");
+            closeModal();
+            showPageContent();
+        } else {
+            alert("验证失败，请重试！");
+        }
+    }
+
+    // 关闭模态框
+    function closeModal() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "none";
+    }
+
+    // 点击关闭按钮时隐藏模态框
+    var closeButton = document.getElementsByClassName("close")[0];
+    closeButton.onclick = function() {
+        closeModal();
+    }
+
+    // 点击页面其他地方时隐藏模态框
+    window.onclick = function(event) {
+        var modal = document.getElementById("myModal");
+        if (event.target == modal) {
+            closeModal();
+        }
+    }
+
+    // 页面加载完成后自动显示模态框
+    window.onload = function() {
+        var modal = document.getElementById("myModal");
+        modal.style.display = "block";
+    };
+</script>
+
+</body>
+</html>
