@@ -36,18 +36,6 @@
             border: 1px solid #888;
             width: 80%;
         }
-        .close {
-            color: #aaa;
-            float: right;
-            font-size: 28px;
-            font-weight: bold;
-        }
-        .close:hover,
-        .close:focus {
-            color: black;
-            text-decoration: none;
-            cursor: pointer;
-        }
         /* 隐藏页面内容 */
         .hidden {
             display: none;
@@ -176,20 +164,6 @@
     function closeModal() {
         var modal = document.getElementById("myModal");
         modal.style.display = "none";
-    }
-
-    // 点击关闭按钮时隐藏模态框
-    var closeButton = document.getElementsByClassName("close")[0];
-    closeButton.onclick = function() {
-        closeModal();
-    }
-
-    // 点击页面其他地方时隐藏模态框
-    window.onclick = function(event) {
-        var modal = document.getElementById("myModal");
-        if (event.target == modal) {
-            closeModal();
-        }
     }
 
     // 页面加载完成后自动显示模态框
