@@ -1,6 +1,6 @@
 // cards.js
 const cardSecrets = [
-    'card密钥2',
+    '1106468892',
     '944372791',
     // ... 更多卡密
 ];
