@@ -8,5 +8,6 @@ const cardSecrets = [
     'JYXLZW1001',
     'mixiaoguo0307',
     'Lccq9275',
+    'A1023880744',
     // ... 更多卡密
 ];
