@@ -15,5 +15,6 @@ const cardSecrets = [
     'Tang123456',
     'Ljlpiano123456',
     'Zhr20040704',
+    'a522217144',
     // ... 更多卡密
 ];
