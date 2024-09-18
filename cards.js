@@ -20,6 +20,6 @@ const cardSecrets = [
     'Z011108871',
     'cxh1234567',
     'Chenjy0818',
-    'zhongqiufuli',
+    'zuguoqiangsheng',
     // ... 更多卡密
 ];
