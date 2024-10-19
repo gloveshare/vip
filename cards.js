@@ -31,5 +31,6 @@ const cardSecrets = [
     'guoguo123',
     'yh199718..',
     'Ln117114521',
+    'kgxx50325669',
     // ... 更多卡密
 ];
