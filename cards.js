@@ -36,5 +36,6 @@ const cardSecrets = [
     'hmzll5211314',
     '199709wjq',
     '51522wwzlz',
+    'En1107452000',
     // ... 更多卡密
 ];
