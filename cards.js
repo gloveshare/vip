@@ -38,5 +38,6 @@ const cardSecrets = [
     'w784267409',
     'hmzll5211314',
     '13213155qq',
+    'Stpehen0520',
     // ... 更多卡密
 ];
