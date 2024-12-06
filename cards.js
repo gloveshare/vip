@@ -25,7 +25,7 @@ const cardSecrets = [
     'syy1070941657',
     'baoyve110',
     'fyt1234567',
-    'cchz112002',
+    'chalu86139',
     'kaiya0509',
     '259758gxy',
     'h863197688',
