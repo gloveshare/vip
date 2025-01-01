@@ -39,5 +39,6 @@ const cardSecrets = [
     'manman0615',
     'yyy5493431',
     '82181234aa',
+    'Chihiro1007',
     // ... 更多卡密
 ];
