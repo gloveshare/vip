@@ -44,5 +44,7 @@ const cardSecrets = [
     'Zy12345678',
     'miki1234567',
     'C13914511861L',
+    'minmin159940',
+    'shnagshang520',
     // ... 更多卡密
 ];
