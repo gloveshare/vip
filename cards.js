@@ -45,6 +45,6 @@ const cardSecrets = [
     'miki1234567',
     'C13914511861L',
     'minmin159940',
-    'shangshang520',
+    'shanghang520',
     // ... 更多卡密
 ];
