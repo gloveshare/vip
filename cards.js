@@ -47,5 +47,6 @@ const cardSecrets = [
     'minmin159940',
     'shanghang520',
     '19991023lc',
+    'kgxx50325669',
     // ... 更多卡密
 ];
