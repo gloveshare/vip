@@ -23,7 +23,7 @@ const cardSecrets = [
     '13717927213sys',
     'Aa17745620099',
     'syy1070941657',
-    'glvoecc',
+    'glovecc',
     'hmzll521314',
     '1472580369dsy',
     'chalu86139',
@@ -48,5 +48,6 @@ const cardSecrets = [
     'shanghang520',
     '19991023lc',
     'kgxx50325669',
+    '07121224PQ',
     // ... 更多卡密
 ];
