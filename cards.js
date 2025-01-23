@@ -26,7 +26,6 @@ const cardSecrets = [
     'glovecc',
     'hmzll521314',
     '1472580369dsy',
-    '199709wjq',
     '18553246221',
     'ZYKYSX2026',
     'hhf663590',
